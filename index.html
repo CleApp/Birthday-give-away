@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Clement Appeynarh | Birthday Data Giveaway</title>
+    <title>Clement Appeynarh | Birthday Data Giveaway - 30th May 2026 Only</title>
     <!-- Font Awesome 6 (free icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -24,7 +24,6 @@
             position: relative;
         }
 
-        /* vibrant dark overlay with blue-black & accents */
         body::before {
             content: "";
             position: fixed;
@@ -37,11 +36,10 @@
             z-index: 0;
         }
 
-        /* main card - deep glassmorphic dark theme */
         .giveaway-container {
             max-width: 560px;
             width: 100%;
-            background: rgba(8, 20, 40, 0.82);
+            background: rgba(8, 20, 40, 0.85);
             backdrop-filter: blur(14px);
             border-radius: 2rem;
             padding: 2rem 1.8rem;
@@ -56,7 +54,6 @@
             box-shadow: 0 35px 60px rgba(0, 0, 0, 0.7), 0 0 0 2px rgba(0, 210, 255, 0.5);
         }
 
-        /* header area */
         .header {
             text-align: center;
             margin-bottom: 1.5rem;
@@ -65,6 +62,643 @@
         .header i {
             font-size: 3.2rem;
             background: linear-gradient(135deg, #ffcc66, #ffaa33);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            filter: drop-shadow(0 0 6px #ffbb44);
+        }
+
+        h1 {
+            font-size: 1.9rem;
+            font-weight: 800;
+            margin-top: 0.5rem;
+            background: linear-gradient(135deg, #FFFFFF, #6bc6ff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.3px;
+        }
+
+        .sub {
+            color: #9acdff;
+            margin-top: 6px;
+            font-weight: 500;
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Date restriction banner */
+        .date-banner {
+            background: linear-gradient(135deg, #ff8c00, #ff6600);
+            padding: 0.8rem;
+            border-radius: 1rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+            box-shadow: 0 0 15px rgba(255, 100, 0, 0.4);
+        }
+
+        .date-banner i {
+            margin-right: 8px;
+            font-size: 1.1rem;
+        }
+
+        .qualify-alert {
+            background: rgba(220, 30, 60, 0.2);
+            border-left: 5px solid #ff3b6f;
+            padding: 1rem 1rem;
+            border-radius: 1rem;
+            margin: 1rem 0 1.5rem 0;
+            font-weight: bold;
+            font-size: 0.95rem;
+            color: #ffc2c2;
+            text-align: center;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+
+        .qualify-alert span {
+            color: #ff8080;
+            font-weight: 800;
+            text-transform: uppercase;
+            background: rgba(0,0,0,0.5);
+            padding: 0.2rem 0.5rem;
+            border-radius: 30px;
+        }
+
+        .qualify-alert i {
+            margin-right: 8px;
+            color: #ff5c5c;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #cce7ff;
+            letter-spacing: 0.3px;
+            font-size: 0.9rem;
+        }
+
+        .input-group label i {
+            margin-right: 8px;
+            color: #3bc0fc;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            background: #071a2b;
+            border: 1.5px solid #1e4970;
+            border-radius: 60px;
+            font-size: 1rem;
+            color: #f0f9ff;
+            transition: all 0.2s;
+            outline: none;
+        }
+
+        .input-field:focus {
+            border-color: #33ccff;
+            box-shadow: 0 0 0 3px rgba(51, 204, 255, 0.3);
+            background: #0a1f32;
+        }
+
+        .input-field:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: linear-gradient(95deg, #0077b3, #00a3cc);
+            border: none;
+            padding: 1rem;
+            border-radius: 60px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-top: 0.5rem;
+            box-shadow: 0 5px 0 #004466;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        .submit-btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #004466;
+        }
+
+        .submit-btn:disabled {
+            background: linear-gradient(95deg, #2c5a6e, #3a7f96);
+            cursor: not-allowed;
+            opacity: 0.7;
+            transform: none;
+            box-shadow: 0 5px 0 #1e4460;
+        }
+
+        .info-panel {
+            margin-top: 2rem;
+            background: #021a2bb3;
+            border-radius: 1.3rem;
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #2f7ca0;
+        }
+
+        .timer-box {
+            font-size: 1.1rem;
+            font-weight: 600;
+            background: #001c2c;
+            display: inline-block;
+            padding: 0.4rem 1.2rem;
+            border-radius: 60px;
+            margin-top: 8px;
+            color: #7df9ff;
+            font-family: monospace;
+        }
+
+        .status-msg {
+            font-size: 0.85rem;
+            margin-top: 12px;
+            padding: 0.4rem;
+            border-radius: 40px;
+            color: #cde9ff;
+        }
+
+        .error-msg {
+            color: #ffaa99;
+            background: rgba(255, 70, 70, 0.2);
+            padding: 0.5rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+        }
+
+        .success-msg {
+            color: #a3ffb3;
+            background: rgba(0, 200, 100, 0.2);
+            border-left: 3px solid #2ecc71;
+        }
+
+        .closed-banner {
+            background: rgba(50, 50, 70, 0.8);
+            border: 2px solid #ffaa33;
+            padding: 1rem;
+            border-radius: 1rem;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        footer {
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 1.5rem;
+            color: #6b9fc7;
+        }
+
+        @media (max-width: 480px) {
+            .giveaway-container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="giveaway-container">
+    <div class="header">
+        <i class="fas fa-birthday-cake"></i>
+        <h1>CLEMENT APPEYNARH</h1>
+        <div class="sub">🎁 BIRTHDAY DATA GIVEAWAY 🎁</div>
+    </div>
+
+    <!-- Date restriction banner - shows only on 30th May 2026 -->
+    <div class="date-banner" id="dateBanner">
+        <i class="fas fa-calendar-day"></i> 🎂 EVENT DAY: 30th MAY 2026 ONLY 🎂
+    </div>
+
+    <div class="qualify-alert">
+        <i class="fas fa-exclamation-triangle"></i> 
+        <span>⚠️ QUALIFICATION RULE ⚠️</span><br>
+        <strong>Only customers who buy my data are qualified to win the data giveaway.</strong><br>
+        <span style="font-size:0.75rem;">*Invalid entries will be disqualified*</span>
+    </div>
+
+    <div id="eventClosedMessage" class="closed-banner" style="display: none;">
+        <i class="fas fa-door-closed"></i> <strong>GIVEAWAY CLOSED</strong><br>
+        This event only runs on <strong>30th May 2026</strong>.<br>
+        Please come back on the event day to participate!
+    </div>
+
+    <form id="giveawayForm">
+        <div class="input-group">
+            <label><i class="fas fa-user"></i> Full Name</label>
+            <input type="text" id="fullName" class="input-field" placeholder="e.g., Akua Mensah" autocomplete="off" required>
+        </div>
+        <div class="input-group">
+            <label><i class="fas fa-phone-alt"></i> Phone Number</label>
+            <input type="tel" id="phoneNumber" class="input-field" placeholder="e.g., 024XXXXXXX or 233505900254" autocomplete="off" required>
+        </div>
+        <button type="submit" id="submitBtn" class="submit-btn">
+            <i class="fas fa-envelope"></i> Submit Entry
+        </button>
+    </form>
+
+    <div class="info-panel">
+        <div><i class="far fa-hourglass-half"></i> <strong>⏳ Next submission available in:</strong></div>
+        <div id="countdownDisplay" class="timer-box">-- : -- : --</div>
+        <div id="feedbackMessage" class="status-msg"></div>
+        <div id="warningMsg" class="error-msg" style="margin-top: 8px;"></div>
+    </div>
+    <footer>
+        <i class="fas fa-lock"></i> 1 submission per 6 hours • Only valid on 30th May 2026 • Email delivery
+    </footer>
+</div>
+
+<script>
+    // ======================== WEB3FORMS CONFIGURATION ========================
+    // Your personal Web3Forms access key
+    const WEB3FORMS_ACCESS_KEY = "39a37c25-3a6b-47fa-9ef0-2a718b942eec";
+    
+    // ======================== DATE RESTRICTION ========================
+    // The event ONLY works on 30th May 2026 (Ghana time UTC+0)
+    // Using UTC to be consistent with Ghana (UTC+0, no DST)
+    const EVENT_DATE_YEAR = 2026;
+    const EVENT_DATE_MONTH = 4; // May = 4 (0-indexed)
+    const EVENT_DATE_DAY = 30;
+    
+    // Event starts at 00:00:00 on 30th May 2026 and ends at 23:59:59.999
+    const EVENT_START_UTC = Date.UTC(EVENT_DATE_YEAR, EVENT_DATE_MONTH, EVENT_DATE_DAY, 0, 0, 0);
+    const EVENT_END_UTC = Date.UTC(EVENT_DATE_YEAR, EVENT_DATE_MONTH, EVENT_DATE_DAY, 23, 59, 59, 999);
+    
+    // Cooldown: 6 hours in milliseconds (only 1 entry every 6 hours)
+    const COOLDOWN_MS = 6 * 60 * 60 * 1000;
+    
+    // Storage keys
+    const STORAGE_LAST_SUBMIT = "clementData_lastSubmitTime";
+    
+    function now() {
+        return new Date().getTime();
+    }
+    
+    // Check if current time is within the event date (30th May 2026 only)
+    function isWithinEventDate() {
+        const currentTime = now();
+        return (currentTime >= EVENT_START_UTC && currentTime <= EVENT_END_UTC);
+    }
+    
+    // Get remaining cooldown milliseconds
+    function getRemainingCooldownMs() {
+        const lastSubmitStr = localStorage.getItem(STORAGE_LAST_SUBMIT);
+        if (!lastSubmitStr) return 0;
+        const lastTime = parseInt(lastSubmitStr, 10);
+        if (isNaN(lastTime)) return 0;
+        const elapsed = now() - lastTime;
+        if (elapsed >= COOLDOWN_MS) return 0;
+        return COOLDOWN_MS - elapsed;
+    }
+    
+    // Check if user is allowed to submit (date restriction AND cooldown)
+    function canSubmit() {
+        if (!isWithinEventDate()) return false;
+        return getRemainingCooldownMs() === 0;
+    }
+    
+    // Get reason why cannot submit
+    function getSubmissionBlockReason() {
+        if (!isWithinEventDate()) {
+            const currentTime = now();
+            if (currentTime < EVENT_START_UTC) {
+                const daysUntil = Math.ceil((EVENT_START_UTC - currentTime) / (1000 * 60 * 60 * 24));
+                return `📅 Giveaway starts on 30th May 2026. ${daysUntil > 0 ? `${daysUntil} day(s) to go!` : 'Coming soon!'}`;
+            } else if (currentTime > EVENT_END_UTC) {
+                return `🎂 Giveaway ended on 30th May 2026. Thank you for participating! See you next year!`;
+            }
+            return "⛔ This giveaway only runs on 30th May 2026.";
+        }
+        
+        const cooldownRemaining = getRemainingCooldownMs();
+        if (cooldownRemaining > 0) {
+            const hours = Math.floor(cooldownRemaining / (1000 * 60 * 60));
+            const mins = Math.floor((cooldownRemaining % (3600000)) / 60000);
+            const secs = Math.floor((cooldownRemaining % 60000) / 1000);
+            return `⏱️ Only one entry allowed per 6 hours. Please wait ${hours}h ${mins}m ${secs}s before submitting again.`;
+        }
+        return null;
+    }
+    
+    function validateInputs(name, phone) {
+        const trimmedName = name.trim();
+        if (!trimmedName || trimmedName.length < 2) {
+            return "❌ Please enter a valid full name (at least 2 characters).";
+        }
+        if (trimmedName.length > 60) {
+            return "❌ Name is too long. Please shorten.";
+        }
+        
+        let cleanedPhone = phone.trim().replace(/\s+/g, '');
+        const digitsOnly = cleanedPhone.replace(/\D/g, '');
+        if (digitsOnly.length >= 9 && digitsOnly.length <= 13) {
+            return null;
+        }
+        return "❌ Invalid phone number. Use Ghana format e.g., 024XXXXXXX or 233505900254";
+    }
+    
+    function formatPhoneDisplay(rawPhone) {
+        let cleaned = rawPhone.trim().replace(/\s+/g, '');
+        cleaned = cleaned.replace(/\D/g, '');
+        if (cleaned.startsWith('0') && cleaned.length === 10) {
+            return cleaned;
+        }
+        if (cleaned.startsWith('233') && cleaned.length === 12) {
+            return cleaned;
+        }
+        return cleaned;
+    }
+    
+    // Send data to Web3Forms
+    async function sendToEmailViaWeb3Forms(name, phone) {
+        const formattedPhone = formatPhoneDisplay(phone);
+        const currentDateTime = new Date().toLocaleString('en-GB', { timeZone: 'Africa/Accra' });
+        
+        const formData = new FormData();
+        formData.append('access_key', WEB3FORMS_ACCESS_KEY);
+        formData.append('subject', '🎉 BIRTHDAY GIVEAWAY ENTRY - 30th May 2026 - Clement Appeynarh');
+        formData.append('from_name', 'Clement Giveaway Form');
+        formData.append('name', name);
+        formData.append('phone', formattedPhone);
+        
+        const messageBody = `🎂 BIRTHDAY DATA GIVEAWAY ENTRY 🎂
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📛 Full Name: ${name}
+📞 Phone Number: ${formattedPhone}
+📅 Event Date: 30th May 2026
+🕒 Submission Time: ${currentDateTime} (GMT)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+✅ Qualification Status: Claimed to be a customer who purchased data
+⚠️ IMPORTANT: Please verify before awarding prize
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎊 Congratulations to the winner! 🎊
+
+This entry was submitted through the Birthday Data Giveaway form.
+Only valid on 30th May 2026. Only customers who buy data are qualified to win.`;
+        
+        formData.append('message', messageBody);
+        formData.append('replyto', `winner-${formattedPhone}@giveaway.local`);
+        
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 15000);
+        
+        try {
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+                signal: controller.signal,
+                headers: { 'Accept': 'application/json' }
+            });
+            
+            clearTimeout(timeoutId);
+            
+            let result;
+            const responseText = await response.text();
+            try {
+                result = JSON.parse(responseText);
+            } catch (e) {
+                throw new Error(`Server response error: ${responseText.substring(0, 100)}`);
+            }
+            
+            if (!response.ok || !result.success) {
+                console.error('Web3Forms Error:', result);
+                throw new Error(result.message || 'Failed to send email notification');
+            }
+            
+            return result;
+        } catch (error) {
+            clearTimeout(timeoutId);
+            if (error.name === 'AbortError') {
+                throw new Error('Connection timeout. Please check your internet and try again.');
+            }
+            throw error;
+        }
+    }
+    
+    function recordSubmission() {
+        localStorage.setItem(STORAGE_LAST_SUBMIT, now().toString());
+    }
+    
+    // Update UI based on date restriction and cooldown
+    function updateUIAndTimer() {
+        const submitBtn = document.getElementById('submitBtn');
+        const countdownSpan = document.getElementById('countdownDisplay');
+        const feedbackDiv = document.getElementById('feedbackMessage');
+        const warningDiv = document.getElementById('warningMsg');
+        const eventClosedDiv = document.getElementById('eventClosedMessage');
+        const formFields = document.querySelectorAll('.input-field');
+        const dateBanner = document.getElementById('dateBanner');
+        
+        const withinDate = isWithinEventDate();
+        const remainingCooldown = getRemainingCooldownMs();
+        const allowed = canSubmit();
+        
+        // Show/hide event closed message
+        if (!withinDate) {
+            eventClosedDiv.style.display = 'block';
+            dateBanner.style.background = "linear-gradient(135deg, #555, #333)";
+            dateBanner.style.opacity = "0.7";
+            submitBtn.disabled = true;
+            
+            // Disable form inputs
+            formFields.forEach(field => field.disabled = true);
+            
+            const currentTime = now();
+            if (currentTime < EVENT_START_UTC) {
+                const daysUntil = Math.ceil((EVENT_START_UTC - currentTime) / (1000 * 60 * 60 * 24));
+                const hoursUntil = Math.floor((EVENT_START_UTC - currentTime) / (1000 * 60 * 60)) % 24;
+                countdownSpan.innerHTML = `📅 Event starts in ${daysUntil}d ${hoursUntil}h`;
+                feedbackDiv.innerHTML = `🎂 Clement's Birthday Giveaway starts on 30th May 2026!`;
+                warningDiv.innerHTML = `Only ${daysUntil} day(s) left! Come back on the event day.`;
+            } else if (currentTime > EVENT_END_UTC) {
+                countdownSpan.innerHTML = `✅ Giveaway completed! Thank you!`;
+                feedbackDiv.innerHTML = `🎊 Thanks for participating in Clement's Birthday Giveaway!`;
+                warningDiv.innerHTML = `Event ended on 30th May 2026. See you next year!`;
+            }
+            submitBtn.innerHTML = '<i class="fas fa-calendar-times"></i> Event Closed';
+            return;
+        } else {
+            eventClosedDiv.style.display = 'none';
+            dateBanner.style.background = "linear-gradient(135deg, #ff8c00, #ff6600)";
+            dateBanner.style.opacity = "1";
+            formFields.forEach(field => field.disabled = false);
+        }
+        
+        // Within event date - handle cooldown
+        if (!allowed && remainingCooldown > 0) {
+            submitBtn.disabled = true;
+            const hours = Math.floor(remainingCooldown / 3600000);
+            const mins = Math.floor((remainingCooldown % 3600000) / 60000);
+            const secs = Math.floor((remainingCooldown % 60000) / 1000);
+            countdownSpan.innerHTML = `${hours}h ${mins}m ${secs}s`;
+            feedbackDiv.innerHTML = "⏳ Cooldown active — one entry per 6 hours on event day.";
+            warningDiv.innerHTML = getSubmissionBlockReason();
+            submitBtn.innerHTML = '<i class="fas fa-hourglass-half"></i> Cooldown Active';
+        } else if (allowed) {
+            submitBtn.disabled = false;
+            countdownSpan.innerHTML = `✅ Ready — you can submit now!`;
+            feedbackDiv.innerHTML = "⭐ Fill in your details and submit. Winner information will be sent directly to email.";
+            warningDiv.innerHTML = "";
+            submitBtn.innerHTML = '<i class="fas fa-envelope"></i> Submit Entry';
+        }
+        
+        if (!localStorage.getItem(STORAGE_LAST_SUBMIT) && allowed) {
+            countdownSpan.innerHTML = `✨ First entry allowed now ✨`;
+        }
+    }
+    
+    function showMessage(elementId, message, isError = false, duration = 5000) {
+        const element = document.getElementById(elementId);
+        if (!element) return;
+        const originalContent = element.innerHTML;
+        element.innerHTML = isError ? `<i class="fas fa-exclamation-circle"></i> ${message}` : `<i class="fas fa-check-circle"></i> ${message}`;
+        element.classList.add(isError ? 'error-msg' : 'success-msg');
+        setTimeout(() => {
+            if (document.getElementById(elementId) === element) {
+                element.innerHTML = originalContent;
+                element.classList.remove('error-msg', 'success-msg');
+            }
+        }, duration);
+    }
+    
+    // Main form submit handler
+    async function handleFormSubmit(event) {
+        event.preventDefault();
+        
+        const submitBtn = document.getElementById('submitBtn');
+        const nameInput = document.getElementById('fullName');
+        const phoneInput = document.getElementById('phoneNumber');
+        const feedbackDiv = document.getElementById('feedbackMessage');
+        const warningDiv = document.getElementById('warningMsg');
+        
+        // Check date restriction first
+        if (!isWithinEventDate()) {
+            const reason = getSubmissionBlockReason();
+            feedbackDiv.innerHTML = `⛔ ${reason || "This giveaway only runs on 30th May 2026."}`;
+            showMessage('warningMsg', reason || 'Event not active', true, 4000);
+            updateUIAndTimer();
+            return;
+        }
+        
+        // Check cooldown
+        if (!canSubmit()) {
+            const reason = getSubmissionBlockReason();
+            feedbackDiv.innerHTML = `⛔ ${reason || "Submission blocked. Please wait for cooldown."}`;
+            showMessage('warningMsg', reason || 'Cooldown active', true, 4000);
+            updateUIAndTimer();
+            return;
+        }
+        
+        // Validate inputs
+        const name = nameInput.value.trim();
+        const phone = phoneInput.value.trim();
+        
+        const validationError = validateInputs(name, phone);
+        if (validationError) {
+            feedbackDiv.innerHTML = `<i class="fas fa-times-circle"></i> ${validationError}`;
+            showMessage('warningMsg', validationError, true, 4000);
+            return;
+        }
+        
+        // Disable button and show loading
+        submitBtn.disabled = true;
+        const originalButtonHtml = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Sending to Email...';
+        feedbackDiv.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Submitting entry on 30th May 2026...';
+        warningDiv.innerHTML = '';
+        
+        try {
+            const cleanName = name.replace(/[<>]/g, '');
+            
+            // Send to Web3Forms
+            await sendToEmailViaWeb3Forms(cleanName, phone);
+            
+            // Record successful submission
+            recordSubmission();
+            
+            // Clear form
+            nameInput.value = '';
+            phoneInput.value = '';
+            
+            // Success message with date context
+            feedbackDiv.innerHTML = '<i class="fas fa-check-circle"></i> ✅ Entry submitted successfully! Winner details sent to email. Happy Birthday Clement! 🎂';
+            showMessage('feedbackMessage', '🎉 Your entry has been recorded for 30th May 2026! You can submit again after 6 hours.', false, 6000);
+            
+            // Update UI
+            updateUIAndTimer();
+            
+        } catch (error) {
+            console.error('Submission error:', error);
+            let errorMsg = `⚠️ Submission failed: ${error.message || "Please try again."}`;
+            feedbackDiv.innerHTML = `<i class="fas fa-exclamation-triangle"></i> ${errorMsg}`;
+            showMessage('warningMsg', errorMsg, true, 6000);
+            
+            if (canSubmit()) {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalButtonHtml;
+            } else {
+                updateUIAndTimer();
+            }
+            return;
+        }
+        
+        // Final button state update
+        setTimeout(() => {
+            if (!canSubmit()) {
+                submitBtn.disabled = true;
+                submitBtn.innerHTML = '<i class="fas fa-hourglass-half"></i> Cooldown Active';
+            } else {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<i class="fas fa-envelope"></i> Submit Entry';
+            }
+        }, 500);
+    }
+    
+    // Live timer update
+    let timerInterval = null;
+    function startLiveUpdater() {
+        if (timerInterval) clearInterval(timerInterval);
+        updateUIAndTimer();
+        timerInterval = setInterval(() => {
+            updateUIAndTimer();
+        }, 1000);
+    }
+    
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', () => {
+        const form = document.getElementById('giveawayForm');
+        form.removeEventListener('submit', handleFormSubmit);
+        form.addEventListener('submit', handleFormSubmit);
+        startLiveUpdater();
+        
+        console.log("🎂 Clement Appeynarh Birthday Giveaway - Active only on 30th May 2026");
+    });
+    
+    window.addEventListener('focus', () => {
+        updateUIAndTimer();
+    });
+</script>
+</body>
+</html>            background: linear-gradient(135deg, #ffcc66, #ffaa33);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
